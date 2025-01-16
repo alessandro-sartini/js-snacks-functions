@@ -7,8 +7,8 @@ const userName = 'Mario';
 
 function concatString(string) {
     
-console.log(`Ciao ${string}`)
-
+    console.log(`Ciao ${string}`)
+    
 }
 // Invoca la funzione qui e stampa il risultato in console
 
