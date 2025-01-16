@@ -20,12 +20,17 @@ function hiHour(stringName) {
     const houar = data.getHours()
     // console.log(houar)
     if (houar >= 7 && houar <= 13) {
+
         console.log(`Buongiorno ${stringName}`);
 
     } else if (houar > 13 && houar <= 17) {
+
         console.log(`Buon pomeriggio ${stringName}`);
+
     } else {
+
         console.log(`Buonasera ${stringName}`);
+        
     }
 
 }

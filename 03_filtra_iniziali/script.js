@@ -17,13 +17,13 @@ function startLetter(array,char) {
 
     if (selectedLetter.length === 0) {
         console.log(`Non ci sono nomi che iniziano per ${char}`);
+    } else {
+        return selectedLetter;
     }
-    return selectedLetter;
-    
     
 }
 // Invoca la funzione qui e stampa il risultato in console
-console.log(startLetter(names, "a"))
+console.log(startLetter(names, "z"))
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]

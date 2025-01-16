@@ -6,15 +6,25 @@ const word = 'javascript';
 
 // Dichiara la funzione qui.
 function numberChar(stringCharCount) {
-    let numVocali=0;
-    const vocali = ['a', 'e', 'i', 'o', 'u', 'y'];
+
+    let numVocali = 0;
+
+    const vocaliTrovate = [];
+
+    const vocali = ['a', 'e', 'i', 'o', 'u'];
+
     for (let i = 0; i < stringCharCount.length; i++){
+
         if (vocali.includes(stringCharCount[i].toLowerCase())) {
+
             numVocali++
+
+            vocaliTrovate.push(stringCharCount[i]);
+            
         }
 
     }
-    return numVocali
+    return numVocali, vocaliTrovate
 }
 
 // Invoca la funzione qui e stampa il risultato in console
